@@ -13,15 +13,15 @@
   color: var(--white-color);
 
   opacity: 1;
-  
+
   box-shadow: var(--box-shadow-lg);
-  
+
   cursor: pointer;
-  
+
   transition: opacity ease 0.2s;
-  
+
   font-size: var(--fz-300);
-  
+
   &:hover {
     opacity: 0.6;
   }
