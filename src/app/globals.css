@@ -98,6 +98,11 @@
   padding: 0;
 }
 
+html {
+  font-family: "Vazirmatn", system-ui;
+  font-feature-settings: "ss01";
+}
+
 html[data-theme="dark"] {
   color-scheme: dark;
 }

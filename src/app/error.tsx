@@ -16,8 +16,8 @@ export default function Error({ error, reset }: Props): ReactElement {
   return (
     <div className={styles.error}>
       <div className={styles.text}>
-        <span className={styles.status_code}>اوه اوه!</span>
-        <h2>یک خطای غیر منتظره رخ داد!</h2>
+        <span className={styles["status-code"]}>اوه اوه!</span>
+        <h3>یک خطای غیر منتظره رخ داد!</h3>
         <p>با عرض پوزش، لطفن با تیم پشتیبانی تماس بگیرید</p>
       </div>
       <div className={styles.vector}>

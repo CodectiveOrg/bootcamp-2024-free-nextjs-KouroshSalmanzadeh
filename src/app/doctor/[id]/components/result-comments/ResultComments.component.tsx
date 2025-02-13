@@ -36,8 +36,6 @@ export default function ResultCommentsComponent({ doctorId }: Props) {
     });
   }, [doctorId]);
 
-  console.log(filterCommnets);
-
   const sortedAndFilteredComments = useMemo(() => {
     let result = [...filteredComments];
 

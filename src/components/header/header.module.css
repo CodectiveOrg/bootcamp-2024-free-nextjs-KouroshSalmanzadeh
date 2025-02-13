@@ -73,14 +73,14 @@
     }
   }
 
-  .section_left_nav {
+  .section-left-nav {
     display: flex;
     align-items: center;
     gap: 2rem;
 
     margin-inline-start: auto;
 
-    .toggle_theme {
+    .toggle-theme {
       display: flex;
       align-items: center;
       gap: 1rem;
@@ -107,12 +107,12 @@
         background-color: hsla(0, 0%, 100%, 0.3);
       }
 
-      #input_toggle_nav {
+      #input-toggle-nav {
         position: absolute;
 
         opacity: 0;
 
-        & ~ .theme_icon_dark {
+        & ~ .theme-icon-dark {
           opacity: 1;
           visibility: visible;
 
@@ -120,7 +120,7 @@
           transition-delay: 0.3s;
         }
 
-        & ~ .theme_icon_dark {
+        & ~ .theme-icon-dark {
           opacity: 0;
           visibility: hidden;
 
@@ -128,7 +128,7 @@
           transition-delay: 0s;
         }
 
-        &:checked ~ .theme_icon_light {
+        &:checked ~ .theme-icon-light {
           opacity: 0;
           visibility: hidden;
 
@@ -136,7 +136,7 @@
           transition-delay: 0s;
         }
 
-        &:checked ~ .theme_icon_dark {
+        &:checked ~ .theme-icon-dark {
           opacity: 1;
           visibility: visible;
 
@@ -145,8 +145,8 @@
         }
       }
 
-      .theme_icon_dark,
-      .theme_icon_light {
+      .theme-icon-dark,
+      .theme-icon-light {
         color: white;
 
         width: 2em;

@@ -67,7 +67,7 @@ export default function Page({ params }: Props): ReactElement {
             />
           )}
           <div className={styles["doctor-text-info"]}>
-            <h1 className={styles["doctor-name"]}>{name}</h1>
+            <span className={styles["doctor-name"]}>{name}</span>
             <p className={styles["doctor-expertise"]}>
               <MingcuteCertificate2Line />
               {expertise}
@@ -85,10 +85,10 @@ export default function Page({ params }: Props): ReactElement {
 
         <div className={styles["about-services-container"]}>
           <div className={styles["about-section"]}>
-            <h2 className={styles["section-title"]}>
+            <h3 className={styles["section-title"]}>
               <MingcuteInformationLine />
               درباره {name}:
-            </h2>
+            </h3>
             <div className={styles["about-text"]}>
               {about.split("،").map((item, i) => (
                 <p key={i} className={styles["about-item"]}>
@@ -100,10 +100,10 @@ export default function Page({ params }: Props): ReactElement {
           </div>
 
           <div className={styles["services-section"]}>
-            <h2 className={styles["section-title"]}>
+            <h3 className={styles["section-title"]}>
               <MingcuteCheckCircleLine />
               خدمات:
-            </h2>
+            </h3>
             <ul className={styles["services-list"]}>
               {services.map((service, index) => (
                 <li key={index} className={styles["service-item"]}>
@@ -116,10 +116,10 @@ export default function Page({ params }: Props): ReactElement {
         </div>
 
         <div className={styles["reviews-section"]}>
-          <h2 className={styles["section-title"]}>
+          <h3 className={styles["section-title"]}>
             <MingcuteCertificateLine />
             امتیاز ها و نظرات:
-          </h2>
+          </h3>
 
           <div className={styles["reviews-info"]}>
             <div className={styles["preview-box"]}>
@@ -191,10 +191,10 @@ export default function Page({ params }: Props): ReactElement {
       </div>
       <div className={styles["left-section"]}>
         <div className={styles["services-types-section"]}>
-          <h2 className={styles["section-title"]}>
+          <h3 className={styles["section-title"]}>
             <MingcuteCalendarTimeAddLine />
             نوبت گیری و ویزیت:
-          </h2>
+          </h3>
           <div className={styles["services-types-list"]}>
             {services_types.map((serviceType, index) => (
               <div key={index} className={styles["service-type-item"]}>

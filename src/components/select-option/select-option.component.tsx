@@ -145,7 +145,7 @@ const SelectOptionComponent = React.memo(
                   </li>
                 ))
               ) : (
-                <li className={styles.not_found_text} key={0}>
+                <li className={styles["not-found-text"]} key={0}>
                   موردی یافت نشد!
                 </li>
               )}

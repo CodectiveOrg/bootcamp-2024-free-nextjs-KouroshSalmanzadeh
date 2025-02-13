@@ -35,8 +35,8 @@ export default function page({ searchParams }: SearchPageProps): ReactElement {
             </div>
             <ClearFiltersButton />
           </div>
-          <div className={styles.filter_items}>
-            <div className={styles.type_search}>
+          <div className={styles["filter-items"]}>
+            <div className={styles["type-search"]}>
               <TypeSearchComponent />
             </div>
             <FilterBadgesComponent />
