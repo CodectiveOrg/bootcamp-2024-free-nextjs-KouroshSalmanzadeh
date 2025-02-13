@@ -123,19 +123,19 @@ export default function HeaderComponent(): ReactElement {
           ))}
         </ul>
       </nav>
-      <div className={styles.section_left_nav}>
+      <div className={styles["section-left-nav"]}>
         <label
           ref={ref}
-          htmlFor={styles.input_toggle_nav}
-          className={styles.toggle_theme}
+          htmlFor={styles["input-toggle-nav"]}
+          className={styles["toggle-theme"]}
         >
           <input
             type="checkbox"
-            id={styles.input_toggle_nav}
+            id={styles["input-toggle-nav"]}
             onClick={changeTheme}
           />
-          <MingcuteSunFill className={styles.theme_icon_light} />
-          <MingcuteMoonFill className={styles.theme_icon_dark} />
+          <MingcuteSunFill className={styles["theme-icon-light"]} />
+          <MingcuteMoonFill className={styles["theme-icon-dark"]} />
         </label>
         <button className={styles.cta}>ورود | ثبت نام</button>
       </div>

@@ -58,7 +58,7 @@ export default function FilterResultComponent() {
   if (filteredDoctors.length === 0) {
     return (
       <div className={styles.result}>
-        <div className={styles.not_found}>
+        <div className={styles["not-found"]}>
           <Image src={NotfoundSearch} alt="" />
           <h2>جست و جوی مورد نظر یافت نشد!</h2>
         </div>
@@ -69,12 +69,16 @@ export default function FilterResultComponent() {
   return (
     <div className={styles.result}>
       {filteredDoctors.map((doctor) => (
-        <div key={doctor.id} className={styles.doctorCard}>
+        <div key={doctor.id} className={styles["doctor-card"]}>
           <div className={styles.info}>
-            <div className={styles.info_container}>
-              <div className={styles.right_box}>
+            <div className={styles["info-container"]}>
+              <div className={styles["right-box"]}>
                 <span className={styles.profile}>
-                  <MingcuteUser3Fill />
+                  {doctor.avatar ? (
+                    <Image width={72} height={72} src={doctor.avatar} alt="" />
+                  ) : (
+                    <MingcuteUser3Fill />
+                  )}
                 </span>
                 <div className={styles.rate}>
                   <span>
@@ -84,11 +88,11 @@ export default function FilterResultComponent() {
                   <label> {` (${doctor.reviewCount} نظر)`}</label>
                 </div>
               </div>
-              <div className={styles.left_box}>
+              <div className={styles["left-box"]}>
                 <h3>{doctor.name}</h3>
                 <p>تخصص: {doctor.expertise}</p>
                 <p>خدمات: {doctor.services.join(", ")}</p>
-                <p className={styles.service_types}>
+                <p className={styles["service-types"]}>
                   {doctor.plural.map((item, i) => (
                     <span key={i}>
                       {item === "inPerson"
@@ -108,13 +112,16 @@ export default function FilterResultComponent() {
                 </p>
               </div>
             </div>
-            <Link href={"#"} className={styles.view_profile}>
+            <Link
+              href={`doctor/${doctor.id}`}
+              className={styles["view-profile"]}
+            >
               <span>مشاهده پروفایل</span>
               <MingcuteLeftFill />
             </Link>
           </div>
           <div className={styles.details}>
-            <div className={styles.item_detail}>
+            <div className={styles["item-detail"]}>
               <span>
                 <MingcuteLocationLine />
                 آدرس:
@@ -122,7 +129,7 @@ export default function FilterResultComponent() {
               {doctor.address}
             </div>
             {doctor.price && (
-              <div className={styles.item_detail}>
+              <div className={styles["item-detail"]}>
                 <span>
                   <MingcuteCashLine />
                   هزینه ویزیت:
@@ -132,7 +139,7 @@ export default function FilterResultComponent() {
               </div>
             )}
             {doctor.firstFreeTime && (
-              <div className={styles.item_detail}>
+              <div className={styles["item-detail"]}>
                 <span>
                   <MingcuteCalendarTimeAddLine />
                   اولین نوبت آزاد:

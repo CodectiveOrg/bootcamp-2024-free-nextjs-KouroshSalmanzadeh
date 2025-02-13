@@ -15,12 +15,12 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    .status_code {
+    .status-code {
       font-size: var(--fz-700);
       font-weight: 700;
     }
 
-    h2 {
+    h3 {
       margin-block-end: 1rem;
     }
   }

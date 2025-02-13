@@ -8,11 +8,11 @@
 
   padding-block-end: 1rem;
 
-  .doctorCard {
+  .doctor-card {
     display: flex;
     flex-direction: column;
 
-    background: var(--color-gray-10);
+    background-color: var(--bg-card);
 
     border-radius: var(--border-radius);
 
@@ -28,11 +28,11 @@
 
       padding-bottom: 1rem;
 
-      .info_container {
+      .info-container {
         display: flex;
         gap: 1rem;
 
-        .right_box {
+        .right-box {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -49,6 +49,13 @@
             border-radius: 999rem;
 
             background-color: var(--color-gray-12);
+
+            img {
+              width: 100%;
+              height: 100%;
+
+              border-radius: 999rem;
+            }
 
             svg {
               width: 2.5rem;
@@ -90,13 +97,13 @@
           }
         }
 
-        .left_box {
+        .left-box {
           p {
             font-size: var(--fz-300);
             color: var(--color-gray-40);
           }
 
-          .service_types {
+          .service-types {
             display: flex;
             align-items: center;
             gap: 0.3125rem;
@@ -125,7 +132,7 @@
         }
       }
 
-      .view_profile {
+      .view-profile {
         max-block-size: 1.5rem;
 
         display: flex;
@@ -156,7 +163,7 @@
 
       margin-top: 1rem;
 
-      .item_detail {
+      .item-detail {
         display: flex;
         align-items: center;
         gap: 0.3125rem;
@@ -191,12 +198,18 @@
     }
   }
 
-  .not_found {
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
     text-align: center;
 
     img {
-      width: 80%;
-      height: 80%;
+      width: 70%;
+      height: 70%;
     }
   }
 }

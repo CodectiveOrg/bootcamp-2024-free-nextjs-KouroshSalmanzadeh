@@ -78,7 +78,7 @@ export default function TypeSearchComponent() {
   );
 
   return (
-    <div className={styles.type_search}>
+    <div className={styles["type-search"]}>
       {types.map(({ id, label }) => (
         <span
           key={id}
