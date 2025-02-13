@@ -112,7 +112,10 @@ export default function FilterResultComponent() {
                 </p>
               </div>
             </div>
-            <Link href={`doctor/${doctor.id}`} className={styles["view-profile"]}>
+            <Link
+              href={`doctor/${doctor.id}`}
+              className={styles["view-profile"]}
+            >
               <span>مشاهده پروفایل</span>
               <MingcuteLeftFill />
             </Link>
